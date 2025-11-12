@@ -26,15 +26,17 @@ else:
     print("No result found")"""
 
 # Test extract data
+page_number = 3
+entries = 5
 if not results:
     print("No extractable content found.")
 else:
-    page = results[3]  # Show first site
+    page = results[page_number]  # Show first site
     content = page.get("content", [])
 
     if not content:
         print("No readable content found.")
     else:
         print(f"\nExtracted content from: {page['url']}\n")
-        for block in content[:20]:  # show first 20 entries
+        for block in content[:entries]:  # show first 20 entries
             print(f"[{block['tag'].upper()}] {block['text']}")

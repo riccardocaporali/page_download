@@ -3,12 +3,14 @@ from functions.search_google import search_google
 from functions.extract_content import extract_content
 
 # Search parameters
-query = "site:nasa.gov filetype:html" #Search key
+query = "arredamento design torino" #Search key
 num_results = 10 # Number of pages
 start = 1 # Starting page
+language = "lang_it"
+country="countryIT"
 
 # Search result and extract urls
-items = search_google(query, num_results, start)
+items = search_google(query, num_results, start, language=language,country=country)
 urls = [item["link"] for item in items]
 
 # Extract content from site
@@ -18,16 +20,16 @@ for url in urls:
     if data:
         results.append({"url": url, "content": data})
 
-"""# Test search
+# Test search
 if items:
     for i, item in enumerate(items[:10], start=1):
         print(f"{i}. {item['link']}")
 else:
-    print("No result found")"""
+    print("No result found")
 
 # Test extract data
-page_number = 3
-entries = 5
+page_number = 0 # The first is 0
+entries = 1
 if not results:
     print("No extractable content found.")
 else:

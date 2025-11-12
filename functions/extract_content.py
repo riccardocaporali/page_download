@@ -4,8 +4,9 @@ from bs4 import BeautifulSoup
 def extract_content(url: str):
     """Downloads a webpage and extracts all h1, h2, and p texts in DOM order."""
     try:
-        # Fetch HTML content from the given URL
-        resp = requests.get(url, timeout=10)
+        # Add a browser-like User-Agent to avoid 403 errors
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+        resp = requests.get(url, headers=headers, timeout=10)
         resp.raise_for_status()
     except requests.RequestException as e:
         # Handle connection, timeout, or HTTP errors

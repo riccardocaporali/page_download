@@ -13,6 +13,7 @@ This project performs automated searches on Google through the Custom Search API
 - Modular, minimal design (`functions/` + `main.py`)
 
 ## Structure
+```text
 page_download/
 ├── functions/
 │   ├── search_google.py
@@ -20,6 +21,7 @@ page_download/
 ├── main.py
 ├── .env
 └── README.md
+```
 
 ## Setup
 # 1. Install dependencies

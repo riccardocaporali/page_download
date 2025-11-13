@@ -1,12 +1,12 @@
 # Page Download
 
-Python toolset for automated web search and content extraction using the **Google Custom Search API**.
+Python toolset for automated web search and content extraction using SerpAPI.
 
 ## Overview
-This project performs automated searches on Google through the Custom Search API, retrieves the result URLs, and extracts readable content (`h1`, `h2`, `p`) from each webpage.
+This project performs automated Google searches through SerpAPI, retrieves organic result URLs, and extracts readable content (h1, h2, p) from each webpage.
 
 ## Features
-- Google Custom Search integration (official API)
+- SerpAPI integration for real organic Google results
 - Environment-based configuration (`.env`)
 - Extraction of semantic HTML elements
 - JSON-ready structured output for text analysis
@@ -25,13 +25,11 @@ page_download/
 
 ## Setup
 # 1. Install dependencies
-uv pip install google-api-python-client python-dotenv beautifulsoup4 requests
+uv pip install google-search-results python-dotenv beautifulsoup4 requests
 ini
 
 # 2. Create .env
-GCP_CSE_API_KEY=your_api_key
-GCP_CSE_CX=your_custom_search_engine_id
-bash
+SERPAPI_KEY=your_api_key
 
 # 3. Run the main script
 uv run python main.py
@@ -45,7 +43,7 @@ Extracted content from: https://carbon.nasa.gov/app_readiness.html
 ...
 
 ## Notes
-Google Custom Search API returns a maximum of 100 results (10 per page).
+SerpAPI returns organic Google results with rich metadata.
 Non-HTML files (PDF, images, etc.) are skipped automatically.
 
 ## License

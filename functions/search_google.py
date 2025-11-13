@@ -1,23 +1,21 @@
 import os
 from dotenv import load_dotenv
-from googleapiclient.discovery import build
+from serpapi import GoogleSearch
 
-def search_google(query, num_results=10, start=1, language="lang_it", country="countryIT"):
-    """Execute Google Custom Search with specified input"""
+def search_google(query, engine="google", num_results=10, language=None, country=None, domain=None):
+    """Esegue ricerca Google tramite SerpAPI"""
     load_dotenv()
-    api_key = os.environ["GCP_CSE_API_KEY"]
-    cx = os.environ["GCP_CSE_CX"]
+    api_key = os.environ["SERPAPI_KEY"]
 
-    service = build("customsearch", "v1", developerKey=api_key)
+    params = {
+        "engine": engine,
+        "q": query,
+        "api_key": api_key,
+        "num": num_results,
+        "hl": language,       
+        "gl": country,         
+        "google_domain": domain  
+    }
 
-    res = service.cse().list(
-        q=query,
-        cx=cx,
-        num=num_results,
-        start=start,
-        lr=language,
-        cr=country
-    ).execute()
-
-    items = res.get("items", [])
-    return items if items else None
+    results = GoogleSearch(params).get_dict()
+    return results.get("organic_results", None)

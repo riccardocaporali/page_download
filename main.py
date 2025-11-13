@@ -3,14 +3,14 @@ from functions.search_google import search_google
 from functions.extract_content import extract_content
 
 # Search parameters
-query = "arredamento design torino" #Search key
-num_results = 10 # Number of pages
-start = 1 # Starting page
-language = "lang_it"
-country="countryIT"
+query = "arredamento design torino"
+num_results = 10
+language = "it" #"it"
+country = "it" #"it"
+domain = "google.it" #"google.it"
 
 # Search result and extract urls
-items = search_google(query, num_results, start, language=language,country=country)
+items = search_google(query, num_results=num_results, language=language, country=country)
 urls = [item["link"] for item in items]
 
 # Extract content from site

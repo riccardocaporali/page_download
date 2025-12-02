@@ -15,12 +15,23 @@ This project performs automated Google searches through SerpAPI, retrieves organ
 ## Structure
 ```text
 page_download/
-├── functions/
-│   ├── search_google.py
-│   ├── extract_content.py
 ├── main.py
-├── .env
-└── README.md
+├── README.md
+├── pyproject.toml
+├── output/
+│   └── ...
+└── src/
+    ├── crawler/
+    │   ├── __init__.py
+    │   ├── search_google.py
+    │   ├── run_query.py
+    │   ├── extract_content.py
+    │   └── save_results.py
+    ├── utils/
+    │   ├── __init__.py
+    │   ├── create_snapshot.py
+    │   └── get_project_root.py
+    └── agent/
 ```
 
 ## Setup

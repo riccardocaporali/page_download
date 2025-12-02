@@ -1,7 +1,6 @@
 # main.py
 from pathlib import Path
-from core.run_query import run_query
-from core.save_results import save_results
+from src.crawler import run_query, save_results
 
 # Search parameters
 query = "arredamento design torino"

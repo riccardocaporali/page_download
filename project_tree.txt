@@ -1,0 +1,20 @@
+├── 📁 src/
+├── 📁 src/utils/
+│   📄 __init__.py
+│   📄 create_snapshot.py
+│   📄 get_project_root.py
+├── 📁 src/crawler/
+│   📄 __init__.py
+│   📄 search_google.py
+│   📄 run_query.py
+│   📄 save_results.py
+│   📄 extract_content.py
+├── 📁 src/agent/
+📄 README.md
+📄 pyproject.toml
+├── 📁 output/
+├── 📁 output/arredamento_design_torino/
+│   📄 001_page.json
+│   📄 003_page.json
+│   📄 002_page.json
+📄 main.py

@@ -4,9 +4,8 @@ from dotenv import load_dotenv
 import requests
 from bs4 import BeautifulSoup
 
-from functions.search_google import search_google
-from functions.extract_content import extract_content
-
+from src.crawler.search_google import search_google
+from src.crawler.extract_content import extract_content
 
 def run_query(
     query: str,

@@ -1,111 +1,183 @@
 {
-  "url": "https://altagammainterior.it/",
+  "url": "https://dichioareadesign.it/",
   "status": "ok",
-  "title": "Arredamenti di Design a Torino - Alta Gamma Interior Design",
+  "title": "Ristrutturazione e arredamento a Torino da oltre 50 anni | AREA DESIGN",
   "content": [
     {
-      "tag": "h3",
-      "text": "Living"
+      "tag": "p",
+      "text": "DI CHIO AREA DESIGN"
     },
     {
-      "tag": "h3",
-      "text": "Dining"
+      "tag": "h1",
+      "text": "Arredamento di Design a Torino"
     },
     {
-      "tag": "h3",
-      "text": "Zona Notte"
-    },
-    {
-      "tag": "h3",
-      "text": "Oggetti decorativi"
-    },
-    {
-      "tag": "h3",
-      "text": "Oggetti funzionali"
-    },
-    {
-      "tag": "h3",
-      "text": "Tessili"
-    },
-    {
-      "tag": "h3",
-      "text": "Outdoor dining"
-    },
-    {
-      "tag": "h3",
-      "text": "Outdoor lounge"
-    },
-    {
-      "tag": "h3",
-      "text": "Outdoor décor"
-    },
-    {
-      "tag": "h3",
-      "text": "Illuminazione decorativa"
-    },
-    {
-      "tag": "h3",
-      "text": "Illuminazione da esterno"
-    },
-    {
-      "tag": "h3",
-      "text": "Prodotti ufficio"
-    },
-    {
-      "tag": "h3",
-      "text": "Allestimenti ufficio"
-    },
-    {
-      "tag": "h3",
-      "text": "PROGETTI"
+      "tag": "h2",
+      "text": "Ristrutturazione e arredamento a Torinoda oltre 50 anni"
     },
     {
       "tag": "p",
-      "text": "Progetti d’arredo per ogni esigenza. Funzionalità, atmosfera, stile ed eleganza."
+      "text": "Con oltre 50 anni di esperienza nella ristrutturazione e arredamento a Torino, Area Design si posiziona come il partner ideale per chi cerca soluzioni su misura e di qualità per la propria casa o ufficio. Grazie alla profonda conoscenza del settore e all’attenzione per i dettagli, offriamo progetti personalizzati che rispecchiano le esigenze e i desideri di ogni cliente. Per una consulenza dettagliata e un preventivo gratuito, non esitare a contattarci. Affida il tuo spazio a professionisti del settore a Torino."
+    },
+    {
+      "tag": "h2",
+      "text": "ristrutturazione e arredamento di eccellenza"
     },
     {
       "tag": "h3",
-      "text": "PRODOTTI"
+      "text": "Prodotti di qualità per il tuo arredamento"
     },
     {
       "tag": "p",
-      "text": "Ampia offerta di prodotti e soluzioni per la casa e l’ufficio, con possibilità di personalizzazione."
+      "text": "Scopri di più"
+    },
+    {
+      "tag": "p",
+      "text": "Scopri di più"
+    },
+    {
+      "tag": "p",
+      "text": "Scopri di più"
+    },
+    {
+      "tag": "p",
+      "text": "Scopri di più"
+    },
+    {
+      "tag": "p",
+      "text": "Scopri di più"
+    },
+    {
+      "tag": "p",
+      "text": "Scopri di più"
+    },
+    {
+      "tag": "h2",
+      "text": "specialisti delle ristrutturazioni"
     },
     {
       "tag": "h3",
-      "text": "SHOWROOM"
+      "text": "ARCHITETTI E PROGETTISTI A TUO SERVIZIO PER UNA CASA ALL’AVANGUARDIA"
     },
     {
       "tag": "p",
-      "text": "Ampia esposizione di 800 mq, disposta su tre piani, con le nostre proposte per il living, la cucina, la zona notte, arredo bagno, ufficio e outdoor."
+      "text": "Area Design è il partner ideale per chi desidera trasformare la propria casa attraversoprogetti di arredo di designeristrutturazioni personalizzate, complete o parziali. Il nostro showroom di Torino accoglie collezioni selezionate diarredamento di alta gamma, pensate per chi cerca soluzioni esclusive, lontane dal concetto di prodotto standard o a basso costo."
+    },
+    {
+      "tag": "p",
+      "text": "Il nostro valore aggiunto risiede nellaprogettazione sartoriale degli spazi, sviluppata da interior designer esperti che ti guidano nella scelta dei materiali, dei brand e delle configurazioni più adatte al tuo stile di vita. Offriamo inoltre un servizio dirilievo misure professionale e senza impegno, che ci permette di creare progetti accurati, esteticamente coerenti e perfettamente integrati nella tua casa."
+    },
+    {
+      "tag": "p",
+      "text": "Scegli Area Design per vivere un’esperienza completa, dall’idea alla realizzazione: qualità, design e consulenza specialistica al tuo servizio."
+    },
+    {
+      "tag": "h2",
+      "text": "arredo cucina di design"
     },
     {
       "tag": "h3",
-      "text": "EXPORT"
+      "text": "design e funzionalità"
     },
     {
       "tag": "p",
-      "text": "Arrediamo i vostri ambienti in Italia come nel resto del mondo."
-    },
-    {
-      "tag": "h3",
-      "text": "SERVIZI"
+      "text": "Tra le eccellenze presenti nel nostro showroom,Valcucinerappresenta il punto di riferimento assoluto per chi cerca una cucina di design senza compromessi. La sua filosofia unisce estetica, innovazione e funzionalità, ridefinendo il concetto stesso di spazio domestico."
     },
     {
       "tag": "p",
-      "text": "Consulenza d’arredo, progettazione d’interni, forniture ufficio, contract, liste nozze, consegne e montaggi, assistenza."
+      "text": "NasceLogica Celata, l’ultima e più sofisticata evoluzione della serie Logica: un progetto iconico frutto di una ricerca ingegneristica avanzata, pensata perripensare lo spazio, ottimizzare i movimenti ereinventare l’ergonomiain cucina.Disponibile nelle configurazioniBar,CucinaePreparazione, Logica Celata offre soluzioni su misura, accessoristica dedicata e un’organizzazione impeccabile che permette di avere tutto a portata di mano nel massimo ordine."
     },
     {
       "tag": "p",
-      "text": "Corso Galileo Ferraris 210121 Torino (TO)"
+      "text": "Con un semplice gesto, ogni funzione può essere completamentecelata, lasciando apparire superfici essenziali e pulite: una cucina che vive, lavora e scompare con eleganza."
     },
     {
       "tag": "p",
-      "text": "P.IVA 16469471003"
+      "text": "ScegliereValcucinesignifica portare nella propria casa un sistema cucina sostenibile, tecnologico e dal design senza tempo, un vero investimento di qualità che Area Design ti aiuta a configurare attraverso una consulenza progettuale dedicata."
     },
     {
       "tag": "p",
-      "text": "Privacy Policy"
+      "text": "I sarti della tua casa"
+    },
+    {
+      "tag": "p",
+      "text": "Puntiamo ad un servizio di alta qualità che ci distingua dalla concorrenza. Perseguiamo i valori di modernità, innovazione, stile ed eleganza, che portiamo nelle vostre case con i nostri progetti di interior."
+    },
+    {
+      "tag": "p",
+      "text": "01."
+    },
+    {
+      "tag": "p",
+      "text": "Ricerchiamo e trattiamo sempre le novità del settore arredamento"
+    },
+    {
+      "tag": "p",
+      "text": "02."
+    },
+    {
+      "tag": "p",
+      "text": "Collaboriamo con marchi attenti all’ecosostenibilità dei prodotti"
+    },
+    {
+      "tag": "p",
+      "text": "03."
+    },
+    {
+      "tag": "p",
+      "text": "Proponiamo soluzioni ideate su misura su ogni cliente"
+    },
+    {
+      "tag": "p",
+      "text": "contattaci"
+    },
+    {
+      "tag": "p",
+      "text": "+39 011250210"
+    },
+    {
+      "tag": "p",
+      "text": "info@dichioareadesign.it"
+    },
+    {
+      "tag": "p",
+      "text": "Via Lucento, 138, 10147 Torino (TO)"
+    },
+    {
+      "tag": "p",
+      "text": "Lunedì 15.30 – 19.00Martedì – Venerdì 10.00 – 12.30 / 15.30 – 19.00Sabato 10.00 – 12.30 / 14.30 – 18.00"
+    },
+    {
+      "tag": "p",
+      "text": "Ho letto e accettato i Termini e le Condizioni dellaPrivacy"
+    },
+    {
+      "tag": "p",
+      "text": "Invia"
+    },
+    {
+      "tag": "p",
+      "text": "Quello che ci differenzia dalla concorrenza non è solo la nostra lunga esperienza maturata in più di 50 anni, ma anche il nostro metodo operativo: collaboriamo con le migliori aziende di arredamento, design ed edilizia a Torino e non solo."
+    },
+    {
+      "tag": "p",
+      "text": "HOMESERVIZIOUTLETBLOGLAVORA CON NOI"
+    },
+    {
+      "tag": "p",
+      "text": "+39 011250210"
+    },
+    {
+      "tag": "p",
+      "text": "info@dichioareadesign.it"
+    },
+    {
+      "tag": "p",
+      "text": "Via Lucento, 138, 10147 Torino (TO)"
+    },
+    {
+      "tag": "p",
+      "text": "© 2024 AREA DESIGN – DI CHIO| P.IVA 07169540015 | Tutti i diritti riservati |Informativa Privacy|Cookie Policy| Developed byDiamondweb S.p.A."
     }
   ]
 }

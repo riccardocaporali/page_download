@@ -1,28 +1,47 @@
 import requests
 from bs4 import BeautifulSoup
+import time
 
-def extract_content(url: str):
-    """Downloads a webpage and extracts all h1, h2, and p texts in DOM order."""
-    try:
-        # Add a browser-like User-Agent to avoid 403 errors
-        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-        resp = requests.get(url, headers=headers, timeout=10)
-        resp.raise_for_status()
-    except requests.RequestException as e:
-        # Handle connection, timeout, or HTTP errors
-        print(f"Error fetching {url}: {e}")
+def extract_content(url: str, retries=3, timeout=10):
+    """Downloads a webpage and extracts h1, h2, h3, p, li, and text-bearing divs in DOM order."""
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+
+    # Retry loop
+    for _ in range(retries):
+        try:
+            resp = requests.get(url, headers=headers, timeout=timeout)
+            resp.raise_for_status()
+            break
+        except requests.RequestException:
+            time.sleep(1)
+    else:
+        print(f"Error fetching {url}")
         return None
 
-    # Ensure correct text encoding
+    # CONTENT-TYPE CHECK → skip non-HTML (PDF, images, etc.)
+    content_type = resp.headers.get("Content-Type", "").lower()
+    if "text/html" not in content_type:
+        print(f"Skipping non-HTML content: {url} ({content_type})")
+        return None
+
+    # Encoding + parser
     resp.encoding = resp.apparent_encoding
     soup = BeautifulSoup(resp.text, "html.parser")
 
-    content = []
-    # Iterate through tags in the order they appear in the DOM
-    for tag in soup.find_all(["h1", "h2", "p"]):
-        text = tag.get_text(strip=True)
-        if text:
-            content.append({"tag": tag.name, "text": text})
+    tags = ["h1", "h2", "h3", "p"]
 
-    # Return structured content or None if page is empty
+    content = []
+    for tag in soup.find_all(tags):
+        text = tag.get_text(strip=True)
+
+        # Skip empty divs
+        if tag.name == "div" and not text:
+            continue
+
+        # Skip tiny garbage
+        if len(text) < 3:
+            continue
+
+        content.append({"tag": tag.name, "text": text})
+
     return content if content else None
